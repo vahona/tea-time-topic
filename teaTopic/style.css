@@ -1,0 +1,14 @@
+html {
+    background-color: aliceblue;
+}
+
+
+body {
+    background-color: rgb(108, 143, 173);
+    margin-inline-end: auto;
+    margin-inline-start: auto;
+}
+
+fieldset {
+    max-width: 50%;
+}
