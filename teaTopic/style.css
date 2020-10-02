@@ -1,5 +1,6 @@
 html {
     background-color: aliceblue;
+    font-family: roboto;
 }
 
 
@@ -7,8 +8,61 @@ body {
     background-color: rgb(108, 143, 173);
     margin-inline-end: auto;
     margin-inline-start: auto;
+    padding-top: 2rem;
 }
 
 fieldset {
     max-width: 50%;
+    margin: 2rem;
+
 }
+
+.up, .down {
+    display: flex;
+}
+
+.thumbdown, .thumbup {
+    background-color: transparent;
+}
+
+.tea_topic {
+    background-color: aliceblue;
+}
+
+.thumb {
+  columns: 2;
+  
+}
+
+.archive {
+    right: 10%;
+
+    position: absolute;
+}
+
+
+svg {
+    max-width: 20px;
+    height: 20px;
+}
+
+img {
+    max-width: 20px;
+}
+
+.title {
+    padding-top: 2rem;
+}
+
+article {
+    max-width: 80%;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    border-radius: 10px;
+}
+
+.content {
+    margin: 2rem;
+    
+}
+
