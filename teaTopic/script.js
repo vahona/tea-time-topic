@@ -61,7 +61,6 @@ async function displayTeaTopic() {
     container.innerHTML = html;
 
 
-
 }
 
 displayTeaTopic();
@@ -79,15 +78,16 @@ const addNewTopic = function(e) {
     title: newTopic.title.value,
     upvotes: 0,
     downvotes:0,
-    
-
   };
 
-  
+  console.log(newTea);
+
   teatopic.push(newTea);
   displayTeaTopic(teatopic);
   newTopic.reset();
 }
+
+
 
 
 // Local storage
@@ -114,10 +114,10 @@ const handleClick = e => {
 
 // Function for the nuber of up and down thumb
 
-const updatetup = idFromTheButton => {
-  const topic = teatopic.find(topic => topic.id === idFromTheButton);
+const updatetup = id => {
+  const topic = teatopic.find(topic => topic.id === id);
   topic.upvotes++;
-  upvotes
+
 
 }
 
@@ -126,7 +126,8 @@ const updateDown = id => {
   teaDown.downvotes++;
 }
 
-//
+
+// Event Listener
 
 container.addEventListener('click', handleClick);
 addForm.addEventListener('submit', addNewTopic);
